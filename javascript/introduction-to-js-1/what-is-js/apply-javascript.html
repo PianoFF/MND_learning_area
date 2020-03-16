@@ -5,7 +5,9 @@
     <title>Apply JavaScript example</title>
     <script>
       // internal JavaScript goes here
-
+      // Script loading:
+      //👇 'DOMContentLoaded' => event which signifies that the HTML body is completely loaded and parsed.
+      // Ensures the JavaScript inside the block won't run until after the enet is fired, ==> avoide loading error
       // document.addEventListener("DOMContentLoaded", function() {
       //   function createParagraph() {
       //     let para = document.createElement("p")
@@ -21,6 +23,10 @@
       // })
     </script>
     <!-- attaching external .js file -->
+    <!-- Script loading:
+👇 'defer' => an attribute, which telss the browser to continue downloading the HTML content once the <script> tag has been reached.
+  In this case, both the script and the HTML will load simultaniously and the code will work.
+-->
     <script src="script.js" defer></script>
   </head>
   <body>
