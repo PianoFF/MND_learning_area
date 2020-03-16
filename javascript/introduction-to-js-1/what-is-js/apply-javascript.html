@@ -6,7 +6,7 @@
     <script>
       //JavaScript goes here
 
-      document.addEventListener("DOMContentloaded", function() {
+      document.addEventListener("DOMContentLoaded", function() {
         function createParagraph() {
           let para = document.createElement("p")
           para.textContent = "You clicked the button"
@@ -14,7 +14,6 @@
         }
 
         const buttons = document.querySelectorAll("button")
-        debugger
 
         for (let i = 0; i < buttons.length; i++) {
           buttons[i].addEventListener("click", createParagraph)
