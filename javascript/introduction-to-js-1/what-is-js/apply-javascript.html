@@ -4,22 +4,24 @@
     <meta charset="utf-8" />
     <title>Apply JavaScript example</title>
     <script>
-      //JavaScript goes here
+      // internal JavaScript goes here
 
-      document.addEventListener("DOMContentLoaded", function() {
-        function createParagraph() {
-          let para = document.createElement("p")
-          para.textContent = "You clicked the button"
-          document.body.appendChild(para)
-        }
+      // document.addEventListener("DOMContentLoaded", function() {
+      //   function createParagraph() {
+      //     let para = document.createElement("p")
+      //     para.textContent = "You clicked the button"
+      //     document.body.appendChild(para)
+      //   }
 
-        const buttons = document.querySelectorAll("button")
+      //   const buttons = document.querySelectorAll("button")
 
-        for (let i = 0; i < buttons.length; i++) {
-          buttons[i].addEventListener("click", createParagraph)
-        }
-      })
+      //   for (let i = 0; i < buttons.length; i++) {
+      //     buttons[i].addEventListener("click", createParagraph)
+      //   }
+      // })
     </script>
+    <!-- attaching external .js file -->
+    <script src="script.js" defer></script>
   </head>
   <body>
     <button>Click me</button>
