@@ -63,6 +63,8 @@
 
       let guessCount = 1
       let resetButton
+      //automatically put the text cursor into the <input> text field as soon as the page loads.
+      guessField.focus()
 
       function checkGuess() {
         let userGuess = Number(guessField.value)
