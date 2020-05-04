@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Math: Task 3</title>
     <style>
       p {
@@ -17,13 +17,7 @@
   </head>
 
   <body>
-
-    <section class="preview">
-
-
-
-    </section>
-
+    <section class="preview"></section>
   </body>
   <script>
     // Statement 1: The elephant weights less than the mouse
@@ -35,22 +29,30 @@
     let duckHeight = 0.3;
 
     // Statement 3: The two passwords match
-    let pwd1 = 'stromboli';
-    let pwd2 = 'stROmBoLi'
+    let pwd1 = "stromboli";
+    let pwd2 = "stROmBoLi";
 
     // Add your code here
-
+    let weightComparison = eleWeight > mouseWeight;
+    let heightComparison = duckHeight > ostrichHeight;
+    let pwdMatch = pwd1 === pwd2;
     // Don't edit the code below here!
 
-    const section = document.querySelector('section');
+    const section = document.querySelector("section");
 
-    let para1 = document.createElement('p');
-    let para2 = document.createElement('p');
-    let para3 = document.createElement('p');
+    let para1 = document.createElement("p");
+    let para2 = document.createElement("p");
+    let para3 = document.createElement("p");
 
-    let weightTest = weightComparison ? 'True — elephants weight less than mice!?' : 'False — of course an elephant is heavier than a mouse!';
-    let heightTest = heightComparison ? 'True — an ostrich is indeed taller than a duck!' : 'False — apparently a duck is taller than an ostrich!?';
-    let pwdTest = pwdMatch ? 'True — the passwords match.' : 'False — the passwords do not match; please check them';
+    let weightTest = weightComparison
+      ? "True — elephants weight less than mice!?"
+      : "False — of course an elephant is heavier than a mouse!";
+    let heightTest = heightComparison
+      ? "True — an ostrich is indeed taller than a duck!"
+      : "False — apparently a duck is taller than an ostrich!?";
+    let pwdTest = pwdMatch
+      ? "True — the passwords match."
+      : "False — the passwords do not match; please check them";
 
     para1.textContent = weightTest;
     section.appendChild(para1);
@@ -59,5 +61,4 @@
     para3.textContent = pwdTest;
     section.appendChild(para3);
   </script>
-
 </html>
